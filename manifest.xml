@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page xmlns="http://schemas.azyobuzi.net/PaletteTriangle">
+  <title>Corporate</title>
+  <index>Colortester/corporate.html</index>
+  <colors>
+    <color name="背景" default="#fff">
+      <selector selector="body" property="background-color" />
+    </color>
+    <color name="基本文字色" default="#333">
+      <selector selector="body" property="color" />
+      <selector selector="header div.caption" property="color" />
+    </color>
+    <color name="ロゴ色" default="#ddd">
+      <selector selector="header div#logo" property="color" />
+    </color>
+    <color name="ロゴ 影" default="#666">
+      <selector selector="header div#logo" property="text-shadow" template="1px 1px 1px #efefef, -1px -1px 1px {0}" />
+    </color>
+    <color name="アイキャッチ 背景" default="linear-gradient(#ccc, #ffffff)">
+      <selector selector="div#eyecatch" property="background" />
+    </color>
+    <color name="アイキャッチ 文字光彩" default="#888">
+      <selector selector="div#eyecatch p" property="text-shadow" template="0px 0px 20px {0}" />
+    </color>
+    <color name="メインエリア上段ブロック　見出しと枠線" default="#ccc">
+      <selector selector="nav.topic" property="border" template="solid 1px {0}" />
+      <selector selector="nav.topic h1" property="color" />
+    </color>
+    <color name="メインエリア上段ブロック　背景" default="#eee">
+      <selector selector="nav.topic" property="background-color" />
+    </color>
+    <color name="メインエリア下段バルーン　背景" default="#5f5f5f">
+      <selector selector="h1.balloon" property="background-color" />
+      <selector selector="h1.balloon" property="border" template="1px solid {0}" />
+      <selector selector="h1.balloon:after" property="border-top" template="10px solid {0}" />
+    </color>
+    <color name="メインエリア下段ブロック　枠線" default="#ccc">
+      <selector selector="section.tn" property="border" template="solid 1px {0}" />
+      <selector selector="section.tn" property="section.tn ul li" template="solid 2.2em {0}" />
+    </color>
+    <color name="メインエリア下段ブロック　見出し" default="#666">
+      <selector selector="h1.small" property="color" />
+    </color>
+    <color name="グローバルナビゲーションとフッター　背景" default="#333">
+      <selector selector="nav#global" property="background-color" />
+      <selector selector="nav#global" property="border-top" template="solid 1px {0}" />
+      <selector selector="nav#global" property="border-bottom" template="solid 1px {0}" />
+      <selector selector="footer" property="background-color" />
+      <selector selector="footer" property="border-top" template="border-top: solid 1px {0}" />
+    </color>
+  </colors>
+</page>
