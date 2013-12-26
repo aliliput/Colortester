@@ -12,19 +12,16 @@
     </color>
     <color name="ロゴ色" default="#ddd">
       <selector selector="header div#logo" property="color" />
-    </color>
-    <color name="ロゴ 影" default="#666">
-      <selector selector="header div#logo" property="text-shadow" template="1px 1px 1px #efefef, -1px -1px 1px {0}" />
+      <selector selector="header div#logo" property="text-shadow" template="1px 1px 1px #efefef, -1px -1px 1px {1}" />
     </color>
     <color name="アイキャッチ 背景" default="linear-gradient(#ccc, #ffffff)">
       <selector selector="div#eyecatch" property="background" />
-    </color>
-    <color name="アイキャッチ 文字光彩" default="#888">
-      <selector selector="div#eyecatch p" property="text-shadow" template="0px 0px 20px {0}" />
+      <selector selector="div#eyecatch p" property="text-shadow" template="0px 0px 20px {1}" />
     </color>
     <color name="メインエリア上段ブロック　見出しと枠線" default="#ccc">
       <selector selector="nav.topic" property="border" template="solid 1px {0}" />
       <selector selector="nav.topic h1" property="color" />
+      <selector selector="nav.topic h1" property="text-shadow" template="-1px -1px 1px {1}, 1px 1px 1px #fff" />
     </color>
     <color name="メインエリア上段ブロック　背景" default="#eee">
       <selector selector="nav.topic" property="background-color" />
