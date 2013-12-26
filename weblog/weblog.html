@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Weblog</title>
+  <style>
+    body{
+      background-color: #fff;  /* color designated */
+      color: #333;  /* color designated */
+      font-family: Tahoma, Helvetica, sans-serif;
+      min-width: 732px;
+      margin: 0;
+      padding: 0;
+    }
+
+    header{
+     background-color: #ddd;  /* color designated */
+     width: 22%;
+     min-width: 240px;
+     margin: 0;
+     padding: 20px 0;
+     float: left;
+     overflow: hidden
+    }
+
+    header div#logo{
+      color: #ddd;   /* color designated */
+      text-shadow: 1px 1px 1px #efefef, -1px -1px 1px #666;   /* color designated */
+      text-align: center;
+      line-height: 150px;
+      font-size: 25px;
+      font-family: Myriad, Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      background-color: #666;
+      width: 150px;
+      height: 150px;
+      border-radius: 80%;
+      border: solid 5px #666;
+      margin: 0 20px 10px 20px;;
+    }
+    
+    header div.caption{
+      color: #333;   /* color designated */
+      text-shadow: 1px 1px 1px #eee, -1px -1px 1px #CCCCCC;   /* color designated */
+      font-size: 0.9em;
+      line-height: 1.2em;
+      font-style: italic;
+      text-align: center;
+      margin: 0 0 30px 0;
+    }
+
+    nav#global{
+      margin: 0;
+      padding: 0;
+      font-size: 0.8em;
+      clear: both;
+    }
+    nav#global ul{
+      margin: 0 20px;
+      padding: 0;
+    }
+    nav#global ul li{
+     background-color: #666;  /* color designated */
+     border: solid 1px #666;  /* color designated */
+     list-style: none;
+     line-height: 3em;
+     text-align: right;
+     width: 50%;
+     float: right;
+     padding: 0 10px;
+     margin: 5px 0;
+     border-radius: 5px;
+    }
+
+    nav#global ul li a{
+      color: #fff;  /* color designated */
+      text-decoration: none;
+      font-family: "Open sans"
+      text-align: right;
+    }
+    
+    section#articles{
+      width: 55%;
+      margin: 0;
+      padding: 0;
+      float: left;
+      background-color: #fff;
+    }
+    
+    section#articles article{
+      margin: 30px 30px 0 30px;
+      padding: 30px 0;
+      border-radius: 5px;
+      background-color: #eee;
+    }
+    
+    article h1{
+      color: #fff;
+      background-color: #999;
+      font-size: 1.5em;
+      line-height: 2.5em;
+      margin: 0 20px 30px -20px;
+      padding: 0 20px;
+      box-shadow: 2px 2px 3px #bbb;
+      position: relative;
+    }
+
+    article h1:before, article h1:after{
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      right: -10px;
+      background: transparent;
+      border-color: transparent  transparent transparent #999;
+	  border-style:solid;
+	  border-width:19px;
+    }
+    article h1:after{
+     left: -18px;
+     bottom: -19px;
+     right:auto;
+     border-color: transparent #999 transparent transparent;
+    }
+    
+    section.tn{
+      border: solid 1px #ccc;  /* color designated */
+      width: 27.5%;
+      min-width: 200px;
+      margin: 15px 0 15px 15px;
+      padding: 15px;
+      float: left;
+    }
+
+    section.tn ul{
+      margin: 0;
+      padding: 0;
+    }
+
+    section.tn ul li{
+      border-left: solid 2.2em #ccc;  /* color designated */
+      list-style: none;
+      margin: 0 0 5px 0;
+      padding: 0 0 0 5px;
+      font-size: 15px;
+      font-style: italic;
+      font-family: serif;
+    }
+
+    div.container{
+      width: 80%;
+      max-width: 1000px;
+      margin: 0 auto;
+      clear: both;
+      overflow: auto;
+    }
+
+    footer{
+      background-color: #333;  /* color designated */
+      border-top: solid 1px #333;  /* color designated */
+      color: #fff;  /* color designated */
+      font-size: 0.9em;
+      margin: 0;
+      padding: 20px 0;
+      float: left;
+      width: 22%;
+    }
+
+    footer address, footer aside{
+      margin: 0;
+      padding: 10px;
+      font-size: 0.9em;
+    }
+
+    footer h1{
+      margin: 0;
+      padding: 0 0 10px 0;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div id="logo">Weblog</div>
+      <div class="caption">Sample webpage for a blog.</div>
+    </div>
+    <nav id="global">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Archives</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">RSS</a></li>
+      </ul>
+    </nav>
+    <nav id="sns">
+      <ul>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Flickr</a></li>
+        <li><a href="#">pinterest</a></li>
+        <li><a href="#">tumblr</a></li>
+      </ul>
+    </nav>
+  </header>
+   <section id="articles">
+    <article>
+      <h1>A sample article for rookie designders</h1>
+      <section class="date">26 Dec, 2013</section>
+      <section class="tags">design, color, layout, development</section>
+      <section class="body">
+      <p>Hey, are you new here? This is your sandbox to study about color layout. Hanging on until be a good designer!</p>
+      <h2>Sample text</h2>
+      <p>Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. </p>
+      </section>
+    </article>
+   </section>
+  <footer>
+    <div class="container">
+      <address>000-0000 hogehoge city, hogehoge-hoge XXX-XXX foo bldg 3F, JAPAN<br />&gt;&gt;&gt; MAP</address>
+      <aside>
+        <h1>Products</h1>
+        <ul>
+          <li>Small appliances</li>
+          <li>Major appliances</li>
+          <li>Custom order</li>
+          <li>Works</li>
+        </ul>
+      </aside>
+      <aside>
+        <h1>Follow us on</h1>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>LinkedIn</li>
+          <li>Google+</li>
+        </ul>
+      </aside>
+    </div>
+  </footer>
+</body>
+</html>
