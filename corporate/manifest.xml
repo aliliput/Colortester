@@ -5,10 +5,12 @@
   <colors>
     <color name="背景" default="#fff">
       <selector selector="body" property="background-color" />
+      <selector selector="header" property="background-color" />
     </color>
     <color name="基本文字色" default="#333">
       <selector selector="body" property="color" />
       <selector selector="header div.caption" property="color" />
+      <selector selector="nav.topic p" property="color" />
     </color>
     <color name="ロゴ色" default="#ddd">
       <selector selector="header div#logo" property="color" />
