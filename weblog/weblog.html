@@ -8,19 +8,26 @@
       background-color: #fff;  /* color designated */
       color: #333;  /* color designated */
       font-family: Tahoma, Helvetica, sans-serif;
-      min-width: 732px;
+      min-width: 1098px;
       margin: 0;
       padding: 0;
+    }
+    
+    header div#logo, article h1, article h2, article section.date, article section.comment h2, footer aside h1{
+      font-family: Georgia,Arial,sans-serif;
+      font-weight: bold;
+      font-style: italic;
+      letter-spacing: -1px;
     }
 
     header{
      background-color: #ddd;  /* color designated */
      width: 22%;
      min-width: 240px;
-     margin: 0;
-     padding: 20px 0;
+     margin: 0 0 -32678px 0;
+     padding: 20px 0 32678px 0;
      float: left;
-     overflow: hidden
+     overflow: hidden;
     }
 
     header div#logo{
@@ -29,14 +36,12 @@
       text-align: center;
       line-height: 150px;
       font-size: 25px;
-      font-family: Myriad, Helvetica, Arial, sans-serif;
-      font-weight: bold;
       background-color: #666;
       width: 150px;
       height: 150px;
       border-radius: 80%;
       border: solid 5px #666;
-      margin: 0 20px 10px 20px;;
+      margin: 0 auto 10px auto;
     }
     
     header div.caption{
@@ -48,20 +53,35 @@
       text-align: center;
       margin: 0 0 30px 0;
     }
+    
+    header hr{
+     clear: both;
+     border: 2px groove #fff;
+     background-color: #ddd;
+     margin: 1em;
+    }
 
-    nav#global{
-      margin: 0;
+    header nav{
+      margin: 0 0 20px 0;
       padding: 0;
+      width: 100%;
       font-size: 0.8em;
       clear: both;
     }
-    nav#global ul{
-      margin: 0 20px;
+    header nav ul{
+      margin: 0 20px 20px 20px;
       padding: 0;
+      float: left;
     }
+    nav#global ul{
+      padding: 0 0 20px 0;
+      border-bottom: 2px groove #fff;
+    }
+    
     nav#global ul li{
      background-color: #666;  /* color designated */
      border: solid 1px #666;  /* color designated */
+     box-shadow: inset 0px 0px 1px 0px #eee, 3px 3px 3px -2px #666;
      list-style: none;
      line-height: 3em;
      text-align: right;
@@ -79,6 +99,27 @@
       text-align: right;
     }
     
+    nav#sns ul li{
+     background-color: #666;  /* color designated */
+     border: solid 1px #666;  /* color designated */
+     width: 60px;
+     height: 60px;
+     line-height: 55px;
+     text-align: center;
+     font-size: 30px;
+     font-weight: bold;
+     list-style: none;
+     border-radius: 50%;
+     margin: 0 10px 5px 0;
+     float: left;
+    }
+    
+    nav#sns ul li a{
+      font-family: Webdings;
+      color: #fff;
+      text-decoration: none;
+    }
+    
     section#articles{
       width: 55%;
       margin: 0;
@@ -89,8 +130,8 @@
     
     section#articles article{
       margin: 30px 30px 0 30px;
-      padding: 30px 0;
-      border-radius: 5px;
+      padding: 30px;
+      border-radius: 10px;
       background-color: #eee;
     }
     
@@ -99,7 +140,7 @@
       background-color: #999;
       font-size: 1.5em;
       line-height: 2.5em;
-      margin: 0 20px 30px -20px;
+      margin: 0 0px 5px -50px;
       padding: 0 20px;
       box-shadow: 2px 2px 3px #bbb;
       position: relative;
@@ -122,84 +163,169 @@
      right:auto;
      border-color: transparent #999 transparent transparent;
     }
+
+    article h2{
+      color: #aaa;
+      text-shadow: -1px -1px 1px #666, 1px 1px 1px #fff;
+      margin: 1em 0 10px 0;
+      padding: 15px 0;
+      font-size: 1.5em;
+      border-bottom: 1px dotted #aaa;
+    }
+
     
-    section.tn{
-      border: solid 1px #ccc;  /* color designated */
-      width: 27.5%;
-      min-width: 200px;
-      margin: 15px 0 15px 15px;
-      padding: 15px;
+    article p{
+     line-height: 1.5em;
+     font-size: 0.9em;
+    }
+    
+    article section.body{
+      margin: 0 0 1em 0;
+      padding: 0 0 1em 0;
+      clear: both;
+    }
+
+    article section.date{
+      font-size: 0.9em;
+      color: #aaa;
+      width: 200px;
       float: left;
     }
 
-    section.tn ul{
-      margin: 0;
-      padding: 0;
+    article section.tags{
+      color: #aaa;
+      font-size: 0.9em;
+      text-align: right;
+      margin: 0 0 1em 0;
     }
 
-    section.tn ul li{
-      border-left: solid 2.2em #ccc;  /* color designated */
-      list-style: none;
-      margin: 0 0 5px 0;
-      padding: 0 0 0 5px;
-      font-size: 15px;
+    article section.comment{
+      padding: 0 0 1em 0;
+      margin: 0 0 1em 0;
+      border-bottom: 1px dotted #aaa;
+    }
+    
+    article section.comment h2{
+     position: relative;
+     padding: 0 30px;
+     margin: 0 -30px 15px -30px;
+     line-height: 45px;
+     font-size: 1.1em;
+     text-shadow: none;
+     border-top: 3px solid #999;
+     border-bottom: 3px solid #999;
+     color: #999;
+     background-color: #fff;
+    }
+    article section.comment h2:before, article section.comment h2:after{
+      content: '';
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: 100%;
+    }
+    article section.comment h2:before{
+      left: 24px;
+      border-width: 12px;
+      border-style: solid;
+      border-color: transparent;
+      border-top-color: #999;
+    }
+    article section.comment h2:after{
+      left: 28px;
+      border-width: 8px;
+      border-style: solid;
+      border-color: transparent;
+      border-top-color: #fff;
+    }
+
+    article section.comment span.name{
+      line-height: 48px;
+      vertical-align: top;
+    }
+    
+    article section.comment img{
+     height: 48px;
+     width: 48px;
+     border: none;
+    }
+    
+    section.note{
+      font-size: 0.8em;
+      line-height: 3em;
       font-style: italic;
-      font-family: serif;
-    }
-
-    div.container{
-      width: 80%;
-      max-width: 1000px;
-      margin: 0 auto;
-      clear: both;
-      overflow: auto;
+      text-align: center;
     }
 
     footer{
-      background-color: #333;  /* color designated */
-      border-top: solid 1px #333;  /* color designated */
-      color: #fff;  /* color designated */
+      background-color: #999;  /* color designated */
       font-size: 0.9em;
-      margin: 0;
-      padding: 20px 0;
+      margin: 0 0 -32678px 0;
+      padding: 20px 0 32678px 0;
       float: left;
-      width: 22%;
+      width: 23%;
     }
 
-    footer address, footer aside{
+    footer aside{
+      color: #fff;  /* color designated */
       margin: 0;
-      padding: 10px;
+      padding: 10px 30px;
       font-size: 0.9em;
+      clear: both;
     }
 
     footer h1{
-      margin: 0;
+      color: #fff;  /* color designated */
+      margin: 10px 0;
       padding: 0 0 10px 0;
       font-size: 20px;
+      text-shadow: 1px 1px 0px #aaa;
+    }
+    
+    footer ul{
+     margin: 0 0 10px 0;
+    }
+
+    footer #tag_cloud ul{
+      margin: 0;
+      padding: 0;
+    }
+        
+    footer #tag_cloud ul li{
+      list-style: none;
+      padding: 5px;
+      margin: 5px 5px 0px 0px;
+      color: #aaa;
+      background-color: #fff;
+      border: solid 1px #fff;
+      border-radius: 3px;
+      font-size: 0.8em;
+      float: left;
+      box-shadow: 3px 3px 3px -2px #333;
     }
   </style>
 </head>
 <body>
+ <div style="overflow: hidden;">
   <header>
-    <div class="container">
       <div id="logo">Weblog</div>
       <div class="caption">Sample webpage for a blog.</div>
-    </div>
     <nav id="global">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Archives</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">RSS</a></li>
+        <li><a href="#">Blogrolls</a></li>
       </ul>
     </nav>
     <nav id="sns">
       <ul>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Flickr</a></li>
-        <li><a href="#">pinterest</a></li>
-        <li><a href="#">tumblr</a></li>
+        <li><a href="#">Y</a></li>
+        <li><a href="#">^</a></li>
+        <li><a href="#">i</a></li>
+        <li><a href="#">s</a></li>
+        <li><a href="#">U</a></li>
       </ul>
     </nav>
   </header>
@@ -209,34 +335,80 @@
       <section class="date">26 Dec, 2013</section>
       <section class="tags">design, color, layout, development</section>
       <section class="body">
+      <div style="width: 400px; height: 256px; background-color: #fff; padding: 30px; text-align: center; border: 3px solid #999; box-shadow: 5px 5px 5px 0 #888;">
+        <img src="../1386696651_Wood2_256.png" />
+      </div>
       <p>Hey, are you new here? This is your sandbox to study about color layout. Hanging on until be a good designer!</p>
       <h2>Sample text</h2>
       <p>Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. </p>
       </section>
+      <section class="comment">
+        <h2>Comments</h2>
+        <div class="avator"><img src="../1386696693_Wood2_128.png" /><span class="name"> Spagetti monster</span></div>
+        <p>Hi, Listen what I say? Say hello world to the wonderful world wide web. No wonderer can leave here. Yes, it is only my dream.</p>
+      </section>
+      <section class="comment">
+        <div class="avator"><img src="../1386696693_Wood2_128.png" /><span class="name"> Spagetti monster</span></div>
+        <p>Hi, Listen what I say? Say hello world to the wonderful world wide web. No wonderer can leave here. Yes, it is only my dream.</p>
+      </section>
     </article>
+    <section class="note">*Copyright all rights reserved.*</section>
    </section>
   <footer>
     <div class="container">
-      <address>000-0000 hogehoge city, hogehoge-hoge XXX-XXX foo bldg 3F, JAPAN<br />&gt;&gt;&gt; MAP</address>
       <aside>
-        <h1>Products</h1>
+        <h1>Recent posts</h1>
         <ul>
-          <li>Small appliances</li>
-          <li>Major appliances</li>
-          <li>Custom order</li>
-          <li>Works</li>
+          <li>Article</li>
+          <li>Article</li>
+          <li>Article</li>
+          <li>Article</li>
+          <li>Article</li>
+          <li>Article</li>
+          <li>Article</li>
+          <li>Article</li>
         </ul>
       </aside>
       <aside>
-        <h1>Follow us on</h1>
+        <h1>Popular posts</h1>
         <ul>
-          <li>Facebook</li>
-          <li>Twitter</li>
-          <li>LinkedIn</li>
-          <li>Google+</li>
+          <li>Article</li>
+          <li>Article</li>
+          <li>Article</li>
+          <li>Article</li>
+          <li>Article</li>
+          <li>Article</li>
+          <li>Article</li>
+          <li>Article</li>
+        </ul>
+      </aside>
+      <aside id="tag_cloud">
+        <h1>Tag cloud</h1>
+        <ul>
+          <li>web</li>
+          <li>internet</li>
+          <li>design</li>
+          <li>color</li>
+          <li>typography</li>
+          <li>development</li>
+          <li>layout</li>
+          <li>Article</li>
+        </ul>
+      </aside>
+      <aside>
+        <h1>Comments</h1>
+        <ul>
+          <li>Article</li>
+          <li>Article</li>
+          <li>Article</li>
+          <li>Article</li>
+          <li>Article</li>
+          <li>Article</li>
+          <li>Article</li>
+          <li>Article</li>
         </ul>
       </aside>
     </div>
   </footer>
-</body>
+</div></body>
 </html>
