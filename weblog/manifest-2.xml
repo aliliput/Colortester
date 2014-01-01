@@ -3,36 +3,36 @@
   <title>Weblog</title>
   <index>weblog.html</index>
   <colors>
-    <color name="左カラム背景" default="#ddd>
+    <color name="左カラム背景色" default="#fff>
       <selector selector="header" property="background-color" />
-      <selector selector="header" property="border-right" template="solid 1px {0}" />
     </color>
     <color name="基本文字色" default="#333">
       <selector selector="body" property="color" />
       <selector selector="header div.caption" property="color" />
     </color>
-    <color name="ロゴ色" default="#ddd">
-      <selector selector="header div#logo" property="color" />
-      <selector selector="header div#logo" property="text-shadow" template="1px 1px 1px #efefef, -1px -1px 1px {1}" />
-    </color>
-    <color name="ロゴ背景色" default="#666">
+    <color name="ロゴ背景色" default="#fff">
       <selector selector="header div#logo" property="background-color" />
+    </color>
+    <color name="左カラム カラー" default="#666">
+      <selector selector="header" property="border-right" template="solid 1px {0}" />
+      <selector selector="header div#logo" property="color" />
       <selector selector="header div#logo" property="border" template="solid 5px {0}" />
-    </color>
-    <color name="グローバルナビゲーション 背景色" default="#666">
-      <selector selector="nav#global ul li" property="background-color" />
+      <selector selector="header div#logo" property="text-shadow" template="1px 1px 1px #efefef, -1px -1px 1px {1}" />
       <selector selector="nav#global ul li" property="border" template="solid 1px {0}" />
-      <selector selector="nav#global ul li" property="box-shadow" template="inset 0px 0px 1px 0px #eee, 3px 3px 3px -2px {0}" />
-    </color>
-    <color name="SNSボタン　背景色" default="#666">
+      <selector selector="nav#global ul li" property="color" />
+      <selector selector="nav#global ul li" property="box-shadow" template="3px 3px 3px -2px {1}" />
       <selector selector="nav#sns ul li" property="border" template="solid 1px {0}" />
+      <selector selector="nav#sns ul li" property="color" />
+    </color>
+    <color name="ナビゲーション 背景色" default="#fff">
+      <selector selector="nav#global ul li" property="background-color" />
       <selector selector="nav#sns ul li" property="background-color" />
     </color>
     <color name="メインカラム　背景色" default="#fff">
       <selector selector="section#articles" property="background-color" />
-    </color>
-    <color name="記事　背景色　背景" default="#eee">
       <selector selector="section#articles article" property="background-color" />
+    </color>
+    <color name="記事　枠線" default="#ddd">
       <selector selector="section#articles article" property="border" template="solid 1px {0}" />
       <selector selector="article h1" property="box-shadow" template="2px 2px 3px {1}" />
     </color>
@@ -47,8 +47,11 @@
       <selector selector="article section.comment h2" property="border-bottom" template="3px solid {0}" />
       <selector selector="article section.comment h2" property="border-top-color" />
     </color>
-    <color name="右カラム背景" default="#999">
+    <color name="右カラム背景" default="#fff">
       <selector selector="footer" property="background-color" />
+    </color>
+    <color name="右カラム色" default="#aaa">
+      <selector selector="footer" property="color" />
       <selector selector="footer" property="border-left" template="solid 1px {0}" />
     </color>
   </colors>
